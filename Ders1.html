@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+ 	<meta charset="UTF-8">
+ 	<title>javascript</title>
+
+</head>
+<style>
+  body{
+
+  }
+#bar{
+ color: #ede7f2;
+   
+}
+
+ #sag{
+       
+     padding: 25px;
+      height: 700px;
+   
+      width: 900px;
+     
+ }
+   
+#b{
+  background-color:#e1adff;
+  margin-left: 50px;
+ width: 1300px
+ 
+}
+.a{
+
+       float:left;
+       
+}
+#menu{
+   
+      margin-left: 100px;
+    padding: 30px;
+      height: 400px;
+     
+      width: 200px;
+}
+#m{
+   background-color:#625170;
+   padding: 10px;
+    width: 900px;
+    margin: auto;
+   
+
+}
+
+</style>
+
+
+
+<script type="text/javascript">
+  
+
+
+
+
+
+
+
+
+
+</script>
+<body >
+  <div id="b">
+  <center>  <img  style="width: 180px" src="resim/js.png"> </center>
+    
+
+
+</div>
+
+
+
+
+
+
+
+<div id="m"><button  style="margin-left: 250px" type="button" target="_blank" 
+  onclick="location.href='anasayfa.html'"  name="anasayfa">Anasayfa</button>
+<button >Hakkımızda</button>
+<button >İletişim</button>
+
+<button >Javascript</button></div><br><br>
+ 
+<div class="a" id="menu"><br><br><br><br>
+  <h4>TEMEL KONULAR</h4>
+  <a href="Ders1.html">Ders 1: Java Script'e Giriş</a><br><br>
+   <a href="Ders2.html">Ders 2: JavaScript Yazılım Yapısı </a><br><br>
+    <a href="Ders3.html">Ders 3: Değişkenler</a><br><br>
+     <a href="Ders4.html">Ders 4: Operatörler</a>
+<br><br>
+   <a href="Ders5.html">Ders 5: Aritmetik </a><br><br>
+      <a href="Ders6.html">Ders 6: Veri Tipleri</a><br><br>
+         <a href="Ders7.html">Ders 7: Fonksiyon Yapısı</a><br><br>
+         <img style="width: 200px;margin-left: 5px" src="resim/giphy (2).gif">
+
+            <a href="Ders8.html">Ders 8: Olaylar(Events)</a><br><br>
+                 <a href="Ders9.html">Ders 9: Olaylar(Events)</a><br><br>
+                  <a href="Ders10.html">Ders 10: Stringler,Sayılar,Diziler</a><br><br>
+                  <a href="Ders10.html">Ders 11: If Koşul Yapıları</a><br><br>
+                  <a href="Ders11.html">Ders 12: Döngüler</a><br><br>
+                  <a href="Ders12.html">Ders 13: Tip Dönüşümleri</a><br><br>
+                  <a href="Ders13.html">Ders 14: Çalışma yapısı ve genel mimarisi</a><br><br>
+
+
+
+
+</div>
+
+
+<div class="a" id="sag">
+
+
+
+  <h2 >Ders 1: Java Script'e Giriş</h2><br>
+  JavaScript, yaygın olarak web tarayıcılarında kullanılmakta olan bir betik dilidir. JavaScript ile yazılan istemci tarafı betikler sayesinde tarayıcının kullanıcıyla etkileşimde bulunması, tarayıcının kontrol edilmesi, asenkron bir şekilde sunucu ile iletişime geçilmesi ve web sayfası içeriğinin değiştirilmesi gibi işlevler sağlanır. JavaScript, Node.js gibi platformlar sayesinde sunucu tarafında da yaygın olarak kullanılmaktadır.
+<br>
+İlk olarak bir Netscape çalışanı olan Brendan Eich tarafından geliştirilen ve 1997 yılından beri bir ECMA standardı olan JavaScript, günümüzde Mozilla Vakfı öncülüğünde özgür yazılım topluluğu tarafından geliştirilmekte ve bakımı yapılmaktadır.
+Web sayfalarının görünümünün mükemmelleştirilmesi, işlevselliğinin artırılması ve dinamik web sayfaları tasarlanması amacıyla JavaScript, HTML kodu içinde gömülü olarak (embedded) kullanılabilir. JavaScript, bir programlama dili disiplini ve özelliklerine sahiptir.<br>
+<p>  JavaScript İşlevleri<br>
+
+• HTML tasarımcılarına bir programlama desteği sağlar, bünyesinde değişkenler, fonksiyonlar, döngüler, yordamlar bulundurur. <br><br>
+• HTML sayfalarına hareketli HTML nesneleri (metin, resim, vb.) koyabilmemizi sağlar. <br><br>
+• Olaylara tepki verir. (Olaydan kastettiğim şey: tıklamak, tuşa basmak, sayfa açmak gibi şeyler.) <br><br>
+• HTML elemanlarını okuyabilir veya yazabilir. <br><br>
+• Kullanıcı ile bilgi alışverişinde bulunmamızı sağlar. Zira HTML formları JavaScript (VB Script) olmadan pek bir işe yaramaz. (Ayrıca ASP derslerinde de kullanacağız.) <br><br>
+
+  <h4>HTML'e JavaScript Kodlarını Tanıtma</h4>
+JavaScript kodlarını script HTML kodları arasına yazarız .<br>
+<img src="resim/Ekran Alıntısı.JPG"><br>
+Örnekte  gördüğümüz document.write(" ") parantez içine  yazılan HTML kodlarını uygular.<br><br>
+<img src="resim/1.JPG"><br>
+NOT:JavaScript body kodları arasında yer alabileceği gibi; fonksiyon halinde, head arasına da yazılabilir.
+<br><br>
+<img src="resim/2.JPG"><br>
+onload=Elemanın yüklenmesi olayıdır.Bu sayfanın kendisi olabileceği gibi bir resim ya da frame de olabilir.Sayfa yüklendiğinde direk çalışması istenen bir fonksiyon varsa bu olay ile çağrılabilir.<br><br>
+alert  kodu ise mesajı ekranda mesaj kutusu ile göstermeye yarar.<br>
+<img style="width: 500px" src="resim/3.JPG"><br>
+
+NOT:JavaScript kodu; CSS'de olduğu gibi, dış bir dosyayla da HTML'e tanıtılabilinir. CSS dosyası .css uzantılıydı. Dış JavaScript dosyası ise .js uzantılıdır. 
+</p>
+
+
+</div>
+
+ 
+</body>
+</html>

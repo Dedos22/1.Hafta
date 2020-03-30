@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+<head>
+ 	<meta charset="UTF-8">
+ 	<title>javascript</title>
+
+</head>
+<style>
+  body{
+
+  }
+#bar{
+ color: #ede7f2;
+   
+}
+
+ #sag{
+       
+     padding: 25px;
+      height: 700px;
+   
+      width: 900px;
+     
+ }
+   
+#b{
+  background-color:#e1adff;
+  margin-left: 50px;
+ width: 1300px
+ 
+}
+.a{
+
+       float:left;
+       
+}
+#menu{
+   
+      margin-left: 100px;
+    padding: 30px;
+      height: 400px;
+     
+      width: 200px;
+}
+#m{
+   background-color:#625170;
+   padding: 10px;
+    width: 900px;
+    margin: auto;
+   
+
+}
+
+</style>
+
+
+
+<script type="text/javascript">
+  
+
+
+
+
+
+
+
+
+
+</script>
+<body onload="x();">
+  <div id="b">
+  <center>  <img  style="width: 180px" src="resim/js.PNG"> </center>
+    
+
+
+</div>
+
+
+
+
+
+
+
+<div id="m"><button  style="margin-left: 250px" type="button" target="_blank" 
+  onclick="location.href='anasayfa.html'"  name="anasayfa">Anasayfa</button>
+<button >Hakkımızda</button>
+<button >İletişim</button>
+
+<button >Javascript</button></div><br><br>
+ 
+<div class="a" id="menu"><br><br><br><br>
+  <h4>TEMEL KONULAR</h4>
+  <a href="Ders1.html">Ders 1: Java Script'e Giriş</a><br><br>
+   <a href="Ders2.html">Ders 2: JavaScript Yazılım Yapısı </a><br><br>
+    <a href="Ders3.html">Ders 3: Değişkenler</a><br><br>
+     <a href="Ders4.html">Ders 4: Operatörler</a>
+<br><br>
+   <a href="Ders5.html">Ders 5: Aritmetik </a><br><br>
+      <a href="Ders6.html">Ders 6: Veri Tipleri</a><br><br>
+         <a href="Ders7.html">Ders 7: Fonksiyon Yapısı</a><br><br>
+         <img style="width: 200px;margin-left: 5px" src="resim/giphy (2).gif">
+
+            <a href="Ders8.html">Ders 8: Olaylar(Events)</a><br><br>
+                
+                  <a href="Ders10.html">Ders 10: Stringler,Sayılar,Diziler</a><br><br>
+                  <a href="Ders11.html">Ders 11: If Koşul Yapıları</a><br><br>
+                  <a href="Ders12.html">Ders 12: Döngüler</a><br><br>
+                  <a href="Ders13.html">Ders 13: Tip Dönüşümleri</a><br><br>
+                  <a href="Ders14.html">Ders 14: Çalışma yapısı ve genel mimarisi</a><br><br>
+
+
+
+
+</div>
+
+
+<div class="a" id="sag">
+
+
+
+  <h2 >Ders 6:VERİ tipleri</h2><br>
+<p> 
+
+JavaScript dilinde birçok değişken türü bulunur.  Bu değişken türleri içerisinde birçok veri tipi saklayabilir. Bu veri tiplerinden bazıları; sayısal, metin, mantıksal, dizeler ve objelerdir.<br>
+
+ 
+
+<h4>String Veri Tipi(Metin)</h4><br>
+
+String veri tipi içerisinde metinsel ifadeleri saklar. String veriler değişkenlere girilirken (“) tırnak işareti ya da (‘) kesme işareti kullanılır.<br>
+
+var isim=”lifeacode”;       // doğru kullanım<br>
+
+var soyisim=’egitim sitesi’;    // doğru kullanım<br>
+
+ 
+
+<h4>Number Veri Tipi(Sayısal)</h4><br>
+
+Numbers veri tipi içerisinde sayısal değerleri tutmak için kullanılır. Değerler tanımlanırken (“) çift tırnak veya (‘) tek tırnak işaretine ihtiyaç yoktur.<br>
+
+var a=1;   // doğru kullanım<br>
+
+var pi=3.14;   // doğru kullanım ondalıklı sayı<br>
+
+Ondalıklı sayı değeri tanımlanırken (.) nokta işareti kullanılır.<br>
+
+ 
+
+<h4>Boolean Veri Tipi(Mantıksal)</h4><br>
+
+Bazı ifadeler sadece iki alternatiflidir. İfade ya doğrudur(true) ya da yanlıştır(false). Bu tip değişkenlere boolean ifadeler ismi verilir. Mantıksal veriler koşul gerektiren ifadeler için kullanılır.<br>
+
+var a = true;  // doğru kullanım<br>
+
+var b = false;  // doğru kullanım<br>
+
+ 
+
+<h4>Array Verisi(Dizi)</h4><br>
+
+Dizi bir veri tipinde birden fazla değer içerir. Dizi oluşturulurken köşeli parantez kullanılır ve değerler (,) ile ayrılır.<br>
+
+var sehir=[“İstanbul”,” Ankara”, ”İzmir”];  // Yazı dizisi<br>
+
+var sayi=[ 11111, 222222, 333333];   // Sayı dizisi<br>
+
+ 
+
+<h4>Veri İkilileri (Nesneler)</h4><br>
+
+Nesneler alt değişken verilerini içerisinde tutar. Alt değişkenler sıralanırken kıvrım parantezler kullanılır. Değişkenler virgüllerle ayrılarak yazılır.<br>
+
+var site = {  isim:”lifeacode”, içerik:”eğitim” };   // doğru kullanım<br>
+
+ 
+
+<h4>Boş ve Tanımsız Veriler( Undefined & Null )</h4>
+
+JavaScript dilinde değer içermeyen değişkenler bulunur. Bu değişkenler veri içermezler. Veri içermeyen değişken oluşturulurken var degişken seklinde oluşturulur. Yani sadece değişken ismi yazılır. (=) eşittir operatörü kullanılmaz.<br>
+
+var sehir;   // doğru kullanım, sehir değişkeni veri içermez.<br>
+
+Bazı durumlarda değişkenin içerisinde bulunan verinin silinmesi gerekir. Bunun için Null ifadesi kullanılır.<br>
+
+sehir = null;  // doğru kullanım, sehir değişkeninin içerisindeki veri silinir.<br>
+
+ 
+
+
+</p>
+
+
+</div>
+
+ 
+</body>
+</html>

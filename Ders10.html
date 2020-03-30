@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+<head>
+ 	<meta charset="UTF-8">
+ 	<title>javascript</title>
+
+</head>
+<style>
+  body{
+
+  }
+#bar{
+ color: #ede7f2;
+   
+}
+
+ #sag{
+       
+     padding: 25px;
+      height: 700px;
+   
+      width: 900px;
+     
+ }
+   
+#b{
+  background-color:#e1adff;
+  margin-left: 50px;
+ width: 1300px
+ 
+}
+.a{
+
+       float:left;
+       
+}
+#menu{
+   
+      margin-left: 100px;
+    padding: 30px;
+      height: 400px;
+     
+      width: 200px;
+}
+#m{
+   background-color:#625170;
+   padding: 10px;
+    width: 900px;
+    margin: auto;
+   
+
+}
+
+</style>
+
+
+
+<script type="text/javascript">
+  
+
+
+
+
+
+
+
+
+</script>
+<body onload="x();">
+  <div id="b">
+  <center>  <img  style="width: 180px" src="resim/js.png"> </center>
+    
+
+
+</div>
+
+
+
+
+
+
+
+<div id="m"><button  style="margin-left: 250px" type="button" target="_blank" 
+  onclick="location.href='anasayfa.html'"  name="anasayfa">Anasayfa</button>
+<button >Hakkımızda</button>
+<button >İletişim</button>
+
+<button >Javascript</button></div><br><br>
+ 
+<div class="a" id="menu"><br><br><br><br>
+  <h4>TEMEL KONULAR</h4>
+  <a href="Ders1.html">Ders 1: Java Script'e Giriş</a><br><br>
+   <a href="Ders2.html">Ders 2: JavaScript Yazılım Yapısı </a><br><br>
+    <a href="Ders3.html">Ders 3: Değişkenler</a><br><br>
+     <a href="Ders4.html">Ders 4: Operatörler</a>
+<br><br>
+   <a href="Ders5.html">Ders 5: Aritmetik </a><br><br>
+      <a href="Ders6.html">Ders 6: Veri Tipleri</a><br><br>
+         <a href="Ders7.html">Ders 7: Fonksiyon Yapısı</a><br><br>
+         <img style="width: 200px;margin-left: 5px" src="resim/giphy (2).gif">
+
+            <a href="Ders8.html">Ders 8: Olaylar(Events)</a><br><br>
+                
+                  <a href="Ders10.html">Ders 10: Stringler,Sayılar,Diziler</a><br><br>
+                  <a href="Ders11.html">Ders 11: If Koşul Yapıları</a><br><br>
+                  <a href="Ders12.html">Ders 12: Döngüler</a><br><br>
+                  <a href="Ders13.html">Ders 13: Tip Dönüşümleri</a><br><br>
+                  <a href="Ders14.html">Ders 14: Çalışma yapısı ve genel mimarisi</a><br><br>
+
+
+
+
+</div>
+
+
+<div class="a" id="sag">
+
+
+
+  <h2 >Ders 10:  Stringler,Sayılar,Diziler</h2>
+  Diziler:<br>
+Diziler birden fazla veriyi saklayabilen değişkenler olarak düşünülebilirler. <br>
+
+Programlama dillerinin çoğunda dizi tanımlanırken hangi türde veri saklayacağı ve kaç elemanlı olacağı belirtilmektedir. JavaScript ise bu konuda da esnek bir dildir. JavaScript ile bir dizi oluştururken veri türü ve eleman sayısı belirtilmez. Ayrıca JavaScript'te oluşturulan bir dizi farklı türdeki verileri bir arada saklayabilir.<br>
+
+Diziler birden fazla veriyi sakladıklarına göre, dizi içerisinde bir düzen olmalıdır ki istenen elemana ulaşılabilsin. Değişkenlerde olduğu gibi diziye bir ad verilir.<br>
+
+Ayrıca dizideki her elemanın bir index (indis) numarası vardır. İlk elemanın index numarası 0'dır. İşte dizi elemanlarına dizi adı ve index numarası kullanılarak ulaşılır.<br>
+
+Örneğin 10 elemanlı bir dizide ilk elemanın index numarası 0, son elemanın index numarası ise 9'dur.
+<br>
+Dizi Tanımlama
+JavaScript'te dizi tanımlama ve dizinin elemanlarına değer atama işlemi şu şekildedir:<br>
+
+var sinifim=new Array();<br>
+
+sinifim[0]="Elin";<br>
+
+sinifim[1]="Özge";<br>
+
+sinifim[2]="Gizem";<br>
+
+
+
+
+Metotlar;<br><br>
+Metotları Math.metot() şeklinde çağırmalısınız.<br>
+public static type abs (type x) – Mutlak Değer.<br><
+public static double sqrt (double x) throws <br>AritmeticException – Karekök.<br>
+public static double pow(double x, double y) throws <br>ArithmeticException – Üs alma.<br>
+public static synchronized double random ( ) – Random sayı üretir.<br>
+public static type max (type a, type b) – ıki değerin maksimumunu verir.<br>
+public static long round (double x) – Verilen sayıyı yuvarlar.<br>
+
+                                                            
+
+                                                             
+
+java.lang.Integer:<br><br>
+Deklârasyon;<br>
+int i; /* integer deðişkeni */<br>
+Integer I; /* Integer objesi */<br>
+Tanımlı Deðişkenler;<br>
+public final static int MIN_VALUE – Bir integer’ın alabileceði minimum deðeri verir.<br>
+public final static int MAX_VALUE – Bir integer’ın alabileceði maksimum deðeri verir.<br>
+Metotlar;<br>
+public static String toString (int i) – Verilen integer ‘i String’e çevirir.<br>
+public static int parseInt (String s) throws NumberFormatException – Verilen String’i  integer’a çevirir.<br>
+NumberFormatException - Verilen String’i integer objesine çevirir.<br>
+public int intValue ( ) – Integer objesinin deðerini integer olarak verir.<br>
+public long longValue( ) – Integer objesinin deðerini long olarak verir.<br>
+public float floatValue( ) – Integer objesinin deðerini float olarak verir.<br>
+public double doubleValue ( ) – Integer objesinin deðerini double olarak verir.<br>
+public String toString ( ) – Integer objesinin deðerini String olarak verir.<br>
+public boolean equals (Object obj) – Verilen objeyle karşılaştırır.<br>
+
+                                                                 
+
+java.lang.String:<br><br>
+Constructor;<br>
+public String (String deðer) – Verilen Stringden yeni bir String kopyası yaratır.<br>
+public String (char deðer [ ] ) – Karakter dizisini String’e çevirir.<br>
+public String (char deðer [ ], int offset, int sayı) <br>– Karakter dizisini belli bir offset’ten başlayarak belli sayıda karakter alarak String’e çevirir.<br>
+Metotlar;<br><br>
+public int length ( ) – String’in uzunluðunu geri verir.<br>
+public char charAt(int index) – String’in belirli bir yerdeki karakterini verir.<br>
+public boolean equals (Object obj) – String’i verilen objeyle karşılaştırır.<br>
+public boolean equalsIsIgnoreCase (String s) - String’i verilen objeyle karşılaştırır fakat eşitliði ararken büyük küçük harflerden etkilenmez.
+public int compareTo(String s) – String’i verilen String ile karşılaştırır ve küçük, eşit ve büyük olma durumuna göre; negatif, sıfır veya pozitif deðer döndürür.<br>
+public booelan regionMatches (int offset, String diger, int doffset,int sayi) – String’i offset’ten başlayarak verilen diðer String’de de doffset’ten başlayarak sayi uzunluðunda karşilaştırır.  public boolean startsWith (String baş) – String’in verilen String ile başlayıp başlamadıðını kontrol eder.
+<p> 
+
+</p>
+
+
+</div>
+
+ 
+</body>
+</html>
