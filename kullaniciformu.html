@@ -21,13 +21,6 @@
 }
 
 
-
-
-
-
-
-
-
 </style>
 <script type="text/javascript">
 function kontrol(frm)
@@ -53,7 +46,7 @@ function kontrol(frm)
         alert("Şifre 6 karakterden fazla olmalı");
         return false;
     }
-    if(tc!=11){
+    if(tc!=11 || isNaN(tc)==true){
         alert("tcniz 11 karakter olmalı.Eksik yada fazla tuşladınız.");
     }
    
