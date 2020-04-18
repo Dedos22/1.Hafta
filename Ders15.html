@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+ 	<meta charset="UTF-8">
+ 	<title>javascript</title>
+
+</head>
+<style>
+  body{
+
+  }
+#bar{
+ color: #ede7f2;
+   
+}
+
+ #sag{
+       
+     padding: 25px;
+      height: 700px;
+   
+      width: 900px;
+     
+ }
+   
+#b{
+  background-color:#e1adff;
+  margin-left: 50px;
+ width: 1300px
+ 
+}
+.a{
+
+       float:left;
+       
+}
+#menu{
+   
+      margin-left: 100px;
+    padding: 30px;
+      height: 400px;
+     
+      width: 200px;
+}
+#m{
+   background-color:#625170;
+   padding: 10px;
+    width: 900px;
+    margin: auto;
+   
+
+}
+
+</style>
+
+
+
+<script type="text/javascript">
+  
+
+
+
+
+
+
+
+
+
+</script>
+<body >
+  <div id="b">
+  <center>  <img  style="width: 180px" src="resim/js.png"> </center>
+    
+
+
+</div>
+
+
+
+
+
+
+
+<div id="m"><button  style="margin-left: 250px" type="button" target="_blank" 
+  onclick="location.href='anasayfa.html'"  name="anasayfa">Anasayfa</button>
+<button >Hakkımızda</button>
+<button >İletişim</button>
+
+<button >Javascript</button></div><br><br>
+ 
+<div class="a" id="menu"><br><br><br><br>
+  <h4>TEMEL KONULAR</h4>
+  <a href="Ders1.html">Ders 1: Java Script'e Giriş</a><br><br>
+   <a href="Ders2.html">Ders 2: JavaScript Yazılım Yapısı </a><br><br>
+    <a href="Ders3.html">Ders 3: Değişkenler</a><br><br>
+     <a href="Ders4.html">Ders 4: Operatörler</a>
+<br><br>
+   <a href="Ders5.html">Ders 5: Aritmetik </a><br><br>
+      <a href="Ders6.html">Ders 6: Veri Tipleri</a><br><br>
+         <a href="Ders7.html">Ders 7: Fonksiyon Yapısı</a><br><br>
+         <img style="width: 200px;margin-left: 5px" src="resim/giphy (2).gif">
+
+            <a href="Ders8.html">Ders 8: Olaylar(Events)</a><br><br>
+                 <a href="Ders9.html">Ders 9: Olaylar(Events)</a><br><br>
+                  <a href="Ders10.html">Ders 10: Stringler,Sayılar,Diziler</a><br><br>
+                  <a href="Ders10.html">Ders 11: If Koşul Yapıları</a><br><br>
+                  <a href="Ders11.html">Ders 12: Döngüler</a><br><br>
+                  <a href="Ders12.html">Ders 13: Tip Dönüşümleri</a><br><br>
+                  <a href="Ders13.html">Ders 14: Çalışma yapısı ve genel mimarisi</a><br><br>
+                   <a  href="objectmodel.html">1-JavaScript Fonksiyon Kullanımı</a><br><br>
+                   <a href="Ders15.html">2-JavaScript Object ( Nesne) Modeli ve Kullanımı</a><br><br>
+                  <a href="jsdom.html">3-JavaScript DOM (Document Object Model) Kullanımı</a><br><br>
+                    <a  href="adamasmaca.html"> 4-AdamAsmacaOyunu</a><br><br>
+                <a  href="kullaniciformu.html">5-Kullanıcı Formu</a><br><br>
+                <a  href="alisverislistesi.html">6-Alışveriş Listesi</a><br><br>
+
+
+
+
+</div>
+
+
+<div class="a" id="sag">
+
+<h4>2-JavaScript Object ( Nesne) Modeli ve Kullanımı</h4>
+
+ <p>5 adet veri tip, 3 adet Object tipi bulunan javaScript dilinde veri tiplerini Number, String, Boolean, Undefined, ve Null . <br>Object tipini ise fonksiyon, dizi, nesne (object)  gibi referanslar oluşturmaktadır.JavaScript’te nesne oluşturmak için { } süslü parantezler kullanılır.
+<br>
+var arac={ };<br>
+
+var ogrenci={ };<br>
+
+Yukarıdaki şekilde bir tanımlama yapıldığında içinde hiçbir şey bulunmayan arac ve ogrenci nesneleri oluşturulmuş olur.<br><br>
+<strong>
+var arac={<br><br>
+    marka:"Renault",<br><br>
+    model:"Clio",<br><br>
+    yil:2018,<br><br>
+    renk:"Beyaz",<br><br>
+    yakit:"Dizel",<br><br>
+    saatUcreti:60<br><br>
+};</strong><br>
+<img style="width: 700px" src="resim/nesne.jpg"><br><br><strong> arac isimli Object (nesne) tanımlaması ve bu nesneye ait özellik tanımlaması yapılarak bu özelliklerin sayfada yazdırılması sağlanmakta.</strong> <br>
+<img src="resim/nesnee.jpg"><br><br>
+Şimdi de nesnemize metot tanımlaması yapalım. Metot tanımlamasını yukarıdaki örnek üzerinde gerçekleştireceğiz. Nesnemize ucretHesapla isminde bir metot tanımlayacağız.<br> Bu fonksiyon dışarıdan bir parametre alarak çalışacaktır. Dışarıdan gönderilen saat bilgisini saatUcreti ile çarparak ödenecek tutarın hesaplanması görevini üstlenecektir.<br>
+<img style="width: 700px" src="resim/nesne2.jpg"><br><br>
+<strong>NOT:Nesne içindeki özelliklerden biri metot içinde kullanılacaksa bu özellik this anahtar sözcüğü ile kullanılmalıdır</strong><br><br>
+ÖRNEK<br>
+<img style="width: 700px" src="resim/nesne3.jpg"><br>
+Yukardaki örnektede ad ve soyad fonksiyon ile return edilerek ekrana yazdırdı.
+
+
+</p>
+
+</div>
+
+ 
+</body>
+</html>

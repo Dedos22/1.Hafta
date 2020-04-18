@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>javascript</title>
+
+</head>
+<style type="text/css">
+    
+
+
+.f{
+
+ margin-left: 500px;
+ margin-top: 200px;
+}
+
+#back{
+    background-color:#e1adff;
+
+}
+
+
+
+
+
+
+
+
+
+</style>
+<script type="text/javascript">
+function kontrol(frm)
+{
+    var ad = frm.ad.value;
+    var sifre1 = frm.sifre1.value;
+   var tc=frm.tc.value;
+    var email = frm.email.value;
+    var at=email.indexOf("@");
+    var nokta=email.lastIndexOf(".");
+    if ( ad==null || ad=="" || ad.length < 4  )
+    {
+        alert("Kullanıcı adı 4 karakterden az olamaz");
+        return false;
+    }
+    if ( sifre1 == null || sifre1 == "" )
+    {
+        alert("Şifreyi boş bırakmayın");
+        return false;
+    }
+     if ( sifre1 <=6 )
+    {
+        alert("Şifre 6 karakterden fazla olmalı");
+        return false;
+    }
+    if(tc!=11){
+        alert("tcniz 11 karakter olmalı.Eksik yada fazla tuşladınız.");
+    }
+   
+    if ( at<1 || nokta<at+2 || nokta+2>=email.length )
+    {
+        alert("Geçerli email adresi girin");
+        return false;
+    }      
+    return true;
+}
+</script>
+
+<body><div style="background-color:#e1adff;" >
+     <button style="margin-left: 600px;" type="button" target="_blank" onclick="location.href='anasayfa.html'"  name="anasayfa">Anasayfa</button>
+<button >Hakkımızda</button>
+<button >İletişim</button>
+</div>
+
+<form action="" name="uye_formu" method="post" class="f" onsubmit="return kontrol(this)">
+        <h4>Kullanıcı Formu</h4>
+    <div style="width: 500px; " id="back">
+ <br>
+    <div class="form">
+    <input type="text" name="ad" placeholder="Kullanıcı Adı"  >
+    </div>
+    <br>
+    <div class="form">
+    <input type="mail" name="email" placeholder="Mail Adresi"  >
+    </div> 
+    <div class="form">
+    <br>
+    <input  name="tc" placeholder="tc" >
+    </div> 
+    <br>
+    <div class="form">
+    <input type="password" name="sifre1" placeholder="Şifre Belirle" >
+    </div>
+      <br>             
+    <input type="submit" name="ekle" class="btn btn-success btn-block" value="Kayıt"><br>
+    </div>               
+</form>
+</body>
+</html>

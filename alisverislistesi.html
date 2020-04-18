@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+ 	<meta charset="UTF-8">
+ 	<title>javascript</title>
+
+</head>
+<style>
+  body{
+    background-image: url('resim/alışveriş.jpg');
+     background-repeat: repeat-y;
+  }
+  #arkaplan{
+
+    margin-left: 700px;
+  }
+
+</style>
+
+
+
+  
+<script type="text/javascript">
+function UrunEkle()
+{
+
+  var yeniH3 = document.createElement("H3");
+  var yeniP = document.createElement("P");
+  
+  yeniH3.innerHTML = document.getElementById("yeniurun").value;
+  
+  var urun = document.getElementById("Div");
+  
+  urun.appendChild(yeniH3); 
+  
+}
+</script>
+
+
+
+<body >
+  <button style="margin-left: 100px; margin-top: 20px;" style="margin-left: 250px" type="button" target="_blank" onclick="location.href='anasayfa.html'"  name="anasayfa">Anasayfa</button>
+<button >Hakkımızda</button>
+<button >İletişim</button>
+
+
+
+
+  <div id="arkaplan">
+ <div><h1 style="color:#51c9bc">ALIŞVERİŞ LİSTESİ</h1></div>
+ <div><h4>NE ALMALIYIM?</h4></div>
+  
+
+
+<p><input type="text" id="yeniurun" 
+  value=" " /></p>
+
+
+
+<input type="button" value="EKLE " onClick="UrunEkle()" />
+<h4>LİSTE<h4>
+<div id="Div" style="width:100%; height:100%;">   </div>
+
+</div>
+ 
+</body>
+</html>
